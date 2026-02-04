@@ -332,7 +332,7 @@ if __name__ == "__main__":
     # build_jsonl("dataset/images/", "dataset/data/train.jsonl", max_concurrent=1)
     
     # Concurrent (5 parallel API calls - MUCH FASTER!):
-    build_jsonl("dataset/images/", "dataset/data/train.jsonl", max_concurrent=3)
+    build_jsonl("dataset/images/", "dataset/data/train.jsonl", max_concurrent=50)
     
     # For testing with small dataset:
     # build_jsonl("dataset/images_short/", "dataset/data/train_short.jsonl", max_concurrent=3)
