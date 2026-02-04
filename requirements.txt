@@ -1,0 +1,20 @@
+# Core dependencies
+python-dotenv>=1.0.0
+requests>=2.31.0
+Pillow>=10.0.0
+
+# Tinker and training
+tinker>=0.1.0
+tinker-cookbook>=0.1.0
+torch>=2.0.0
+transformers>=4.40.0
+
+# Data handling
+datasets>=2.14.0
+
+# Utilities
+chz>=0.1.0
+wandb>=0.15.0  # Optional: for experiment tracking
+
+# Inference (vLLM)
+vllm>=0.3.0  # For fast inference with exported models

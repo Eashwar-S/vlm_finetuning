@@ -1,0 +1,17 @@
+Review summary updated: 2026-02-03T00:14:33.108793Z
+Total images reviewed (at least one field set): 24
+Total images in dataset: 102
+
+forest_fire_smoke_visible: correct=23, incorrect=1, skip=0, accuracy(excluding skip)=95.8%
+forest_fire_flames_visible: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
+confirm_uncontrolled_forest_fire: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
+fire_state: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
+fire_type: correct=23, incorrect=0, skip=1, accuracy(excluding skip)=100.0%
+fire_intensity: correct=23, incorrect=0, skip=1, accuracy(excluding skip)=100.0%
+fire_size: correct=22, incorrect=1, skip=1, accuracy(excluding skip)=95.7%
+fire_hotspots: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
+infrastructure_nearby: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
+people_nearby: correct=20, incorrect=0, skip=4, accuracy(excluding skip)=100.0%
+tree_vitality: correct=12, incorrect=3, skip=9, accuracy(excluding skip)=80.0%
+
+OVERALL accuracy (excluding skip): 98.0%
