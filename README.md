@@ -22,7 +22,7 @@ This pipeline handles:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/vlm_finetuning.git
+git clone https://github.com/Eashwar-S/vlm_finetuning.git
 cd vlm_finetuning
 ```
 
@@ -63,9 +63,6 @@ EOF
 ```
 
 **Important:** Replace `your_tinker_api_key_here` and `your_huggingface_api_key_here` with your actual API keys.
-
-> [!WARNING]
-> Never commit your `.env` file to version control. It's already included in `.gitignore`.
 
 ### 5. Prepare D-Fire Dataset
 
