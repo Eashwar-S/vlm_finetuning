@@ -1,0 +1,1481 @@
+{
+  "category_stats": {
+    "forest_fire_smoke_visible": {
+      "total": 102,
+      "matches": 92,
+      "mismatches": [
+        {
+          "filename": "WEB10507.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10469.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10467.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10485.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10520.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10472.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10459.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10475.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10504.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10478.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Yes": 81,
+          "No": 21
+        },
+        "flash": {
+          "Yes": 85,
+          "No": 17
+        }
+      },
+      "confusion_matrix": {
+        "Yes \u2192 Yes": 78,
+        "Yes \u2192 No": 3,
+        "No \u2192 No": 14,
+        "No \u2192 Yes": 7
+      }
+    },
+    "forest_fire_flames_visible": {
+      "total": 102,
+      "matches": 92,
+      "mismatches": [
+        {
+          "filename": "WEB10507.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10517.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10469.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10467.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10485.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10520.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10472.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10459.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10475.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10504.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Yes": 83,
+          "No": 19
+        },
+        "flash": {
+          "Yes": 85,
+          "No": 17
+        }
+      },
+      "confusion_matrix": {
+        "Yes \u2192 Yes": 79,
+        "Yes \u2192 No": 4,
+        "No \u2192 No": 13,
+        "No \u2192 Yes": 6
+      }
+    },
+    "confirm_uncontrolled_forest_fire": {
+      "total": 102,
+      "matches": 92,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10449.jpg",
+          "preview": "Yes",
+          "flash": "Closer investigation required"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10486.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "Closer investigation required",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Yes": 75,
+          "No forest fire visible": 26,
+          "Closer investigation required": 1
+        },
+        "flash": {
+          "No forest fire visible": 35,
+          "Yes": 66,
+          "Closer investigation required": 1
+        }
+      },
+      "confusion_matrix": {
+        "Yes \u2192 No forest fire visible": 8,
+        "Yes \u2192 Yes": 66,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Yes \u2192 Closer investigation required": 1,
+        "Closer investigation required \u2192 No forest fire visible": 1
+      }
+    },
+    "fire_state": {
+      "total": 102,
+      "matches": 84,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10529.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10449.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10484.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10513.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10535.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10486.jpg",
+          "preview": "Growth Phase",
+          "flash": "Ignition Phase"
+        },
+        {
+          "filename": "WEB10522.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10523.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10440.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Growth Phase",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10534.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "Growth Phase"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "Fully Developed Phase",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Fully Developed Phase": 51,
+          "No forest fire visible": 26,
+          "Growth Phase": 24,
+          "Cannot be determined": 1
+        },
+        "flash": {
+          "No forest fire visible": 34,
+          "Growth Phase": 31,
+          "Fully Developed Phase": 36,
+          "Ignition Phase": 1
+        }
+      },
+      "confusion_matrix": {
+        "Fully Developed Phase \u2192 No forest fire visible": 7,
+        "Fully Developed Phase \u2192 Growth Phase": 8,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Growth Phase \u2192 Growth Phase": 22,
+        "Fully Developed Phase \u2192 Fully Developed Phase": 36,
+        "Growth Phase \u2192 Ignition Phase": 1,
+        "Cannot be determined \u2192 Growth Phase": 1,
+        "Growth Phase \u2192 No forest fire visible": 1
+      }
+    },
+    "fire_type": {
+      "total": 102,
+      "matches": 76,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10511.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10496.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10506.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10509.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10481.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10524.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10540.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10493.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10480.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10502.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10446.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Surface Fire",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10490.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10510.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10533.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10491.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Surface Fire"
+        },
+        {
+          "filename": "WEB10531.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10461.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10483.jpg",
+          "preview": "Surface Fire",
+          "flash": "Crown Fire"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Cannot be determined": 18,
+          "Surface Fire": 49,
+          "No forest fire visible": 26,
+          "Crown Fire": 9
+        },
+        "flash": {
+          "No forest fire visible": 34,
+          "Surface Fire": 38,
+          "Crown Fire": 26,
+          "Cannot be determined": 4
+        }
+      },
+      "confusion_matrix": {
+        "Cannot be determined \u2192 No forest fire visible": 7,
+        "Surface Fire \u2192 Surface Fire": 37,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Cannot be determined \u2192 Crown Fire": 6,
+        "Crown Fire \u2192 Crown Fire": 9,
+        "Cannot be determined \u2192 Cannot be determined": 4,
+        "Surface Fire \u2192 Crown Fire": 11,
+        "Surface Fire \u2192 No forest fire visible": 1,
+        "Cannot be determined \u2192 Surface Fire": 1
+      }
+    },
+    "fire_intensity": {
+      "total": 102,
+      "matches": 87,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10449.jpg",
+          "preview": "High",
+          "flash": "Moderate"
+        },
+        {
+          "filename": "WEB10539.jpg",
+          "preview": "Low",
+          "flash": "Moderate"
+        },
+        {
+          "filename": "WEB10457.jpg",
+          "preview": "Moderate",
+          "flash": "High"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10440.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Moderate"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10460.jpg",
+          "preview": "Low",
+          "flash": "Moderate"
+        },
+        {
+          "filename": "WEB10446.jpg",
+          "preview": "Moderate",
+          "flash": "High"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Moderate",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10499.jpg",
+          "preview": "Low",
+          "flash": "Moderate"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "High",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "High": 48,
+          "No forest fire visible": 26,
+          "Moderate": 23,
+          "Low": 4,
+          "Cannot be determined": 1
+        },
+        "flash": {
+          "No forest fire visible": 34,
+          "High": 42,
+          "Moderate": 25,
+          "Low": 1
+        }
+      },
+      "confusion_matrix": {
+        "High \u2192 No forest fire visible": 7,
+        "High \u2192 High": 40,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Moderate \u2192 Moderate": 20,
+        "High \u2192 Moderate": 1,
+        "Low \u2192 Moderate": 3,
+        "Moderate \u2192 High": 2,
+        "Low \u2192 Low": 1,
+        "Cannot be determined \u2192 Moderate": 1,
+        "Moderate \u2192 No forest fire visible": 1
+      }
+    },
+    "fire_size": {
+      "total": 102,
+      "matches": 73,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10492.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10449.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10513.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10494.jpg",
+          "preview": "Medium",
+          "flash": "Large"
+        },
+        {
+          "filename": "WEB10539.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10457.jpg",
+          "preview": "Medium",
+          "flash": "Large"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "Medium",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10535.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10541.jpg",
+          "preview": "Medium",
+          "flash": "Large"
+        },
+        {
+          "filename": "WEB10440.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10460.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10446.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Small",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10510.jpg",
+          "preview": "Medium",
+          "flash": "Large"
+        },
+        {
+          "filename": "WEB10463.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10534.jpg",
+          "preview": "Medium",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10527.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10499.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10458.jpg",
+          "preview": "Large",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10491.jpg",
+          "preview": "Large",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "Large",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10447.jpg",
+          "preview": "Medium",
+          "flash": "Small"
+        },
+        {
+          "filename": "WEB10466.jpg",
+          "preview": "Small",
+          "flash": "Medium"
+        },
+        {
+          "filename": "WEB10501.jpg",
+          "preview": "Medium",
+          "flash": "Large"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Large": 36,
+          "Medium": 28,
+          "No forest fire visible": 26,
+          "Small": 11,
+          "Cannot be determined": 1
+        },
+        "flash": {
+          "No forest fire visible": 34,
+          "Medium": 24,
+          "Small": 10,
+          "Large": 33,
+          "Cannot be determined": 1
+        }
+      },
+      "confusion_matrix": {
+        "Large \u2192 No forest fire visible": 6,
+        "Medium \u2192 Medium": 15,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Medium \u2192 Small": 6,
+        "Large \u2192 Large": 28,
+        "Small \u2192 Small": 4,
+        "Medium \u2192 Large": 5,
+        "Small \u2192 Medium": 6,
+        "Medium \u2192 No forest fire visible": 1,
+        "Cannot be determined \u2192 Medium": 1,
+        "Small \u2192 No forest fire visible": 1,
+        "Medium \u2192 Cannot be determined": 1,
+        "Large \u2192 Medium": 2
+      }
+    },
+    "fire_hotspots": {
+      "total": 102,
+      "matches": 75,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10529.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10511.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10496.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10526.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10506.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10451.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10522.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10541.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10488.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10493.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10510.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10537.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10534.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10444.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10527.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10499.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10458.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10491.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10483.jpg",
+          "preview": "One hotspot",
+          "flash": "Multiple hotspots"
+        },
+        {
+          "filename": "WEB10495.jpg",
+          "preview": "One hotspot",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "One hotspot": 31,
+          "No forest fire visible": 26,
+          "Multiple hotspots": 45
+        },
+        "flash": {
+          "No forest fire visible": 34,
+          "Multiple hotspots": 64,
+          "One hotspot": 4
+        }
+      },
+      "confusion_matrix": {
+        "One hotspot \u2192 No forest fire visible": 8,
+        "One hotspot \u2192 Multiple hotspots": 19,
+        "No forest fire visible \u2192 No forest fire visible": 26,
+        "Multiple hotspots \u2192 Multiple hotspots": 45,
+        "One hotspot \u2192 One hotspot": 4
+      }
+    },
+    "infrastructure_nearby": {
+      "total": 102,
+      "matches": 85,
+      "mismatches": [
+        {
+          "filename": "WEB10529.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10484.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10517.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10469.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10500.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10520.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10510.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10533.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10499.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10516.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10508.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10483.jpg",
+          "preview": "Yes",
+          "flash": "No"
+        },
+        {
+          "filename": "WEB10472.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10459.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10475.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10504.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10478.jpg",
+          "preview": "No",
+          "flash": "No forest fire visible"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Yes": 47,
+          "No forest fire visible": 20,
+          "No": 35
+        },
+        "flash": {
+          "Yes": 48,
+          "No": 35,
+          "No forest fire visible": 16,
+          "Cannot be determined": 3
+        }
+      },
+      "confusion_matrix": {
+        "Yes \u2192 Yes": 41,
+        "Yes \u2192 No": 4,
+        "No forest fire visible \u2192 No forest fire visible": 13,
+        "No \u2192 No": 31,
+        "Yes \u2192 No forest fire visible": 2,
+        "No forest fire visible \u2192 Yes": 7,
+        "No \u2192 Cannot be determined": 3,
+        "No \u2192 No forest fire visible": 1
+      }
+    },
+    "people_nearby": {
+      "total": 102,
+      "matches": 80,
+      "mismatches": [
+        {
+          "filename": "WEB10484.jpg",
+          "preview": "Yes",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10517.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10512.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10524.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10469.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10451.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10488.jpg",
+          "preview": "No",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10493.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10502.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10446.jpg",
+          "preview": "Yes",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10520.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10490.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10454.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10464.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10458.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10516.jpg",
+          "preview": "Yes",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10531.jpg",
+          "preview": "No",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10508.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10472.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10459.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10475.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        },
+        {
+          "filename": "WEB10504.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Yes"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Cannot be determined": 3,
+          "No": 56,
+          "No forest fire visible": 20,
+          "Yes": 23
+        },
+        "flash": {
+          "Cannot be determined": 16,
+          "No": 45,
+          "No forest fire visible": 15,
+          "Yes": 26
+        }
+      },
+      "confusion_matrix": {
+        "Cannot be determined \u2192 Cannot be determined": 3,
+        "No \u2192 No": 45,
+        "No forest fire visible \u2192 No forest fire visible": 13,
+        "Yes \u2192 Yes": 19,
+        "Yes \u2192 Cannot be determined": 2,
+        "Yes \u2192 No forest fire visible": 2,
+        "No \u2192 Cannot be determined": 10,
+        "No forest fire visible \u2192 Cannot be determined": 1,
+        "No \u2192 Yes": 1,
+        "No forest fire visible \u2192 Yes": 6
+      }
+    },
+    "tree_vitality": {
+      "total": 102,
+      "matches": 57,
+      "mismatches": [
+        {
+          "filename": "WEB10450.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10529.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10492.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10468.jpg",
+          "preview": "Vital",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10452.jpg",
+          "preview": "Vital",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10474.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10517.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10521.jpg",
+          "preview": "Vital",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10512.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10526.jpg",
+          "preview": "Vital",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10506.jpg",
+          "preview": "Vital",
+          "flash": "Cannot be determined"
+        },
+        {
+          "filename": "WEB10494.jpg",
+          "preview": "Moderate Vitality",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10457.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10524.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10489.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10448.jpg",
+          "preview": "Vital",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10487.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10456.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10535.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10540.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10522.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Moderate Vitality"
+        },
+        {
+          "filename": "WEB10541.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10523.jpg",
+          "preview": "Moderate Vitality",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10488.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10493.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10480.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10530.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10445.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10455.jpg",
+          "preview": "Cannot be determined",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10482.jpg",
+          "preview": "Vital",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10502.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10460.jpg",
+          "preview": "Moderate Vitality",
+          "flash": "Vital"
+        },
+        {
+          "filename": "WEB10532.jpg",
+          "preview": "Vital",
+          "flash": "No forest fire visible"
+        },
+        {
+          "filename": "WEB10490.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10497.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10533.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10534.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10528.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10444.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10464.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Dead"
+        },
+        {
+          "filename": "WEB10491.jpg",
+          "preview": "Cannot be determined",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10508.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Vital"
+        },
+        {
+          "filename": "WEB10483.jpg",
+          "preview": "Moderate Vitality",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10538.jpg",
+          "preview": "Vital",
+          "flash": "Declining"
+        },
+        {
+          "filename": "WEB10475.jpg",
+          "preview": "No forest fire visible",
+          "flash": "Vital"
+        }
+      ],
+      "value_distributions": {
+        "preview": {
+          "Cannot be determined": 46,
+          "Vital": 26,
+          "No forest fire visible": 24,
+          "Dead": 1,
+          "Declining": 1,
+          "Moderate Vitality": 4
+        },
+        "flash": {
+          "No forest fire visible": 31,
+          "Declining": 21,
+          "Dead": 10,
+          "Cannot be determined": 24,
+          "Vital": 15,
+          "Moderate Vitality": 1
+        }
+      },
+      "confusion_matrix": {
+        "Cannot be determined \u2192 No forest fire visible": 6,
+        "Vital \u2192 Declining": 6,
+        "No forest fire visible \u2192 No forest fire visible": 22,
+        "Dead \u2192 Dead": 1,
+        "Vital \u2192 Dead": 2,
+        "Vital \u2192 No forest fire visible": 3,
+        "Cannot be determined \u2192 Cannot be determined": 21,
+        "Vital \u2192 Vital": 12,
+        "Cannot be determined \u2192 Dead": 7,
+        "Declining \u2192 Declining": 1,
+        "Vital \u2192 Cannot be determined": 3,
+        "Cannot be determined \u2192 Declining": 11,
+        "Moderate Vitality \u2192 Declining": 3,
+        "Cannot be determined \u2192 Moderate Vitality": 1,
+        "Moderate Vitality \u2192 Vital": 1,
+        "No forest fire visible \u2192 Vital": 2
+      }
+    }
+  },
+  "overall_accuracy": 79.59001782531195,
+  "overall_matches": 893,
+  "overall_total": 1122,
+  "common_images": 102
+}

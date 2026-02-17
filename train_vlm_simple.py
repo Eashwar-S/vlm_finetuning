@@ -23,8 +23,8 @@ from tinker_cookbook.renderers import TrainOnWhat
 class ForestFireDatasetBuilder:
     """Builder for forest fire detection dataset"""
     
-    jsonl_path: str = "dataset/data/train_short.jsonl"
-    images_dir: str = "dataset/images_short"
+    jsonl_path: str = "dataset/data/train.jsonl"
+    images_dir: str = "dataset/images"
     model_name: str = "Qwen/Qwen3-VL-30B-A3B-Instruct"
     renderer_name: str = "qwen3"
     
@@ -171,8 +171,8 @@ def main():
     
     # Create dataset builder
     dataset_builder = ForestFireDatasetBuilder(
-        jsonl_path="dataset/data/train_short.jsonl",
-        images_dir="dataset/images_short",
+        jsonl_path="dataset/data/train.jsonl",
+        images_dir="dataset/images",
         model_name="Qwen/Qwen3-VL-30B-A3B-Instruct",
         renderer_name="qwen3",
         batch_size=1,
@@ -182,17 +182,17 @@ def main():
     
     # Build training configuration
     config = train.Config(
-        log_path="./experiments/forest_fire_vlm",
+        log_path="./experiments/forest_fire_vlm_5k",
         model_name="Qwen/Qwen3-VL-30B-A3B-Instruct",
         dataset_builder=dataset_builder,
-        learning_rate=2e-5,
+        learning_rate=1e-5,
         lr_schedule="constant",  # Options: "linear" or "constant"
-        num_epochs=10,
+        num_epochs=3,
         lora_rank=16,
         evaluator_builders=[],
         infrequent_evaluator_builders=[],
-        save_every=20,
-        eval_every=20,
+        save_every=500,
+        eval_every=500,
         wandb_project="forest-fire-vlm",  # Set to your project name to enable W&B
         wandb_name="forest-fire-vlm-training",
     )

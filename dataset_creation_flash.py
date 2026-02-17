@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-MODEL = "google/gemini-3-pro-preview"
+MODEL = "google/gemini-3-flash-preview"  # Changed to Gemini 3 Flash
 
 PROMPT_TEXT = """Analyze the aerial image from the UAV's camera and detect potential forest fires. Answer the following questions based on the image analysis
 in a JSON schema. If a question cannot be determined from the image answer with 'Cannot be determined'.
@@ -58,7 +58,6 @@ def img_to_data_url(image_path: str) -> str:
 
 def validate_answer(ans: dict) -> tuple[bool, str]:
     # Minimal validator: required keys + enum membership.
-    # (You can swap in jsonschema library later.)
     if not isinstance(ans, dict):
         return False, "Answer is not a dict"
     for k in RESPONSE_SCHEMA["required"]:
@@ -71,36 +70,6 @@ def validate_answer(ans: dict) -> tuple[bool, str]:
     if extra:
         return False, f"Extra keys: {sorted(extra)}"
     return True, "ok"
-
-def call_openrouter(image_path: str, prompt_text: str, json_schema: dict) -> dict:
-    """Synchronous API call (kept for backwards compatibility)"""
-    url = "https://openrouter.ai/api/v1/chat/completions"
-    headers = {
-        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
-        "Content-Type": "application/json",
-        "HTTP-Referer": "http://localhost",
-        "X-Title": "crossfire-dataset-builder",
-    }
-    payload = {
-        "model": MODEL,
-        "messages": [{
-            "role": "user",
-            "content": [
-                {"type": "text", "text": prompt_text},
-                {"type": "image_url", "image_url": {"url": img_to_data_url(image_path)}},
-            ],
-        }],
-        "response_format": {
-            "type": "json_schema",
-            "json_schema": {"name": "fire_schema", "strict": True, "schema": json_schema},
-        },
-        "temperature": 0.0,
-    }
-    r = requests.post(url, headers=headers, json=payload, timeout=120)
-    r.raise_for_status()
-    content = r.json()["choices"][0]["message"]["content"]
-    return json.loads(content) if isinstance(content, str) else content
-
 
 async def call_openrouter_async(session: aiohttp.ClientSession, image_path: str, prompt_text: str, json_schema: dict) -> dict:
     """Async API call for concurrent processing"""
@@ -140,8 +109,13 @@ def file_sha1(path: str) -> str:
             h.update(chunk)
     return h.hexdigest()
 
-async def process_image_async(session: aiohttp.ClientSession, image_path: Path, image_dir: Path, done: set) -> tuple[bool, dict, str]:
+async def process_image_from_jsonl(session: aiohttp.ClientSession, image_filename: str, image_dir: Path, done: set) -> tuple[bool, dict, str]:
     """Process a single image asynchronously with retries"""
+    image_path = image_dir / image_filename
+    
+    if not image_path.exists():
+        return False, None, f"Image not found: {image_path}"
+    
     sha = file_sha1(str(image_path))
     
     if sha in done:
@@ -159,8 +133,8 @@ async def process_image_async(session: aiohttp.ClientSession, image_path: Path, 
                 continue
             
             row = {
-                "image": str(image_path.relative_to(image_dir)),
-                "filename": image_path.name,
+                "image": image_filename,
+                "filename": image_filename,
                 "sha1": sha,
                 "prompt": PROMPT_TEXT,
                 "response_schema": RESPONSE_SCHEMA,
@@ -178,11 +152,12 @@ async def process_image_async(session: aiohttp.ClientSession, image_path: Path, 
     return False, None, last_err  # Failed after retries
 
 
-async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int = 5):
+async def build_jsonl_from_existing(input_jsonl: str, image_dir: str, out_jsonl: str, max_concurrent: int = 5):
     """
-    Build JSONL dataset with concurrent API calls
+    Build JSONL dataset from existing JSONL file with concurrent API calls
     
     Args:
+        input_jsonl: Input JSONL file path with image filenames
         image_dir: Directory containing images
         out_jsonl: Output JSONL file path
         max_concurrent: Maximum number of concurrent API calls (default: 5)
@@ -190,6 +165,19 @@ async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int 
     image_dir = Path(image_dir)
     out_path = Path(out_jsonl)
     out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Read image filenames from input JSONL
+    image_filenames = []
+    with open(input_jsonl, "r", encoding="utf-8") as f:
+        for line in f:
+            try:
+                data = json.loads(line)
+                image_filenames.append(data["filename"])
+            except Exception as e:
+                print(f"Error reading line: {e}")
+                continue
+    
+    print(f"Found {len(image_filenames)} images in {input_jsonl}")
 
     # Skip already processed files if re-running
     done = set()
@@ -203,17 +191,20 @@ async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int 
     
     print(f"Already processed: {len(done)} images")
 
-    exts = {".jpg", ".jpeg", ".png", ".webp"}
-    paths = sorted([p for p in image_dir.rglob("*") if p.suffix.lower() in exts])
-    
     # Filter out already processed
-    pending_paths = [p for p in paths if file_sha1(str(p)) not in done]
-    print(f"Total images found: {len(paths)}")
-    print(f"Remaining to process: {len(pending_paths)}")
+    pending_filenames = []
+    for filename in image_filenames:
+        img_path = image_dir / filename
+        if img_path.exists():
+            sha = file_sha1(str(img_path))
+            if sha not in done:
+                pending_filenames.append(filename)
+    
+    print(f"Remaining to process: {len(pending_filenames)}")
     print(f"Concurrent API calls: {max_concurrent}")
     print("-" * 80)
     
-    if not pending_paths:
+    if not pending_filenames:
         print("✓ All images already processed!")
         return
     
@@ -225,14 +216,14 @@ async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int 
         # Use semaphore to limit concurrent requests
         semaphore = asyncio.Semaphore(max_concurrent)
         
-        async def process_with_semaphore(path):
+        async def process_with_semaphore(filename):
             async with semaphore:
-                return await process_image_async(session, path, image_dir, done)
+                return await process_image_from_jsonl(session, filename, image_dir, done)
         
         # Open output file
         with out_path.open("a", encoding="utf-8") as f_out:
             # Process in batches to avoid overwhelming the API
-            tasks = [process_with_semaphore(p) for p in pending_paths]
+            tasks = [process_with_semaphore(fn) for fn in pending_filenames]
             
             for coro in asyncio.as_completed(tasks):
                 success, row, error = await coro
@@ -242,7 +233,7 @@ async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int 
                     f_out.flush()
                     done.add(row["sha1"])
                     success_count += 1
-                    print(f"✓ OK ({success_count}/{len(pending_paths)}): {row['filename']}")
+                    print(f"✓ OK ({success_count}/{len(pending_filenames)}): {row['filename']}")
                 elif error:
                     fail_count += 1
                     print(f"✗ FAIL ({fail_count}): {error}")
@@ -254,85 +245,11 @@ async def build_jsonl_async(image_dir: str, out_jsonl: str, max_concurrent: int 
     print(f"  Total processed: {len(done)}")
 
 
-def build_jsonl(image_dir: str, out_jsonl: str, max_concurrent: int = 1):
-    """
-    Build JSONL dataset (wrapper for backward compatibility)
-    
-    Args:
-        image_dir: Directory containing images
-        out_jsonl: Output JSONL file path
-        max_concurrent: Maximum concurrent API calls (1 = sequential, 5+ = parallel)
-    """
-    if max_concurrent > 1:
-        # Use async version for concurrent processing
-        asyncio.run(build_jsonl_async(image_dir, out_jsonl, max_concurrent))
-    else:
-        # Use synchronous version for sequential processing
-        image_dir = Path(image_dir)
-        out_path = Path(out_jsonl)
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-
-        # Skip already processed files if re-running
-        done = set()
-        if out_path.exists():
-            with out_path.open("r", encoding="utf-8") as f:
-                for line in f:
-                    try:
-                        done.add(json.loads(line)["sha1"])
-                    except Exception:
-                        pass
-        print(f"Done: {len(done)}")
-
-        exts = {".jpg", ".jpeg", ".png", ".webp"}
-        paths = sorted([p for p in image_dir.rglob("*") if p.suffix.lower() in exts])
-
-        with out_path.open("a", encoding="utf-8") as f_out:
-            for p in paths:
-                sha = file_sha1(str(p))
-                if sha in done:
-                    continue
-
-                # retries for schema issues / transient errors
-                last_err = None
-                for attempt in range(3):
-                    try:
-                        ans = call_openrouter(str(p), PROMPT_TEXT, RESPONSE_SCHEMA)
-                        ok, msg = validate_answer(ans)
-                        if not ok:
-                            last_err = msg
-                            time.sleep(1.0)
-                            continue
-
-                        row = {
-                            "image": str(p.relative_to(image_dir)),
-                            "filename": p.name,
-                            "sha1": sha,
-                            "prompt": PROMPT_TEXT,
-                            "response_schema": RESPONSE_SCHEMA,
-                            "teacher_answer": ans,
-                            "teacher_model": MODEL,
-                            "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                        }
-                        f_out.write(json.dumps(row) + "\n")
-                        f_out.flush()
-                        done.add(sha)
-                        print("OK:", p.name)
-                        break
-                    except Exception as e:
-                        last_err = str(e)
-                        time.sleep(2.0)
-
-                else:
-                    print("FAIL:", p.name, "|", last_err)
-
-
 if __name__ == "__main__":
-    # Example usage:
-    # Sequential (original behavior):
-    # build_jsonl("dataset/images/", "dataset/data/train.jsonl", max_concurrent=1)
-    
-    # Concurrent (5 parallel API calls - MUCH FASTER!):
-    build_jsonl("dataset/images/", "dataset/data/train.jsonl", max_concurrent=3)
-    
-    # For testing with small dataset:
-    # build_jsonl("dataset/images_short/", "dataset/data/train_short.jsonl", max_concurrent=3)
+    # Run on images from train_short.jsonl
+    asyncio.run(build_jsonl_from_existing(
+        input_jsonl="dataset/data/train_short.jsonl",
+        image_dir="dataset/images_short",
+        out_jsonl="dataset/data/train_short_flash.jsonl",
+        max_concurrent=10
+    ))
