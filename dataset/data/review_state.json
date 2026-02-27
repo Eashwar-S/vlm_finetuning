@@ -1,21 +1,24 @@
 {
-  "idx": 23,
+  "idx": 101,
   "reviews": {
     "bba09c25749ab982d55410f86e96c0152881354b": {
       "per_field": {
         "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
         "confirm_uncontrolled_forest_fire": "correct",
-        "fire_state": "correct",
+        "fire_state": "incorrect",
         "fire_type": "correct",
-        "fire_intensity": "skip",
-        "fire_size": "skip",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-02T23:58:39.398689Z"
+      "gt_overrides": {
+        "fire_state": "Growth Phase"
+      },
+      "timestamp": "2026-02-20T22:39:50.059893Z"
     },
     "08851b66129bd699facfd82555d2316822c7efab": {
       "per_field": {
@@ -29,9 +32,10 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-02T23:59:03.486341Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:40:46.507561Z"
     },
     "380f7a128ae5f86ee76cde49d29bac3b2f412018": {
       "per_field": {
@@ -47,7 +51,8 @@
         "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-02T23:59:29.529181Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:41:03.772241Z"
     },
     "d78101242e804b7002750f72ccecd9e680d5acb7": {
       "per_field": {
@@ -61,9 +66,12 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "correct"
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-02T23:59:56.830545Z"
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:41:20.324667Z"
     },
     "adbea57da5c1acec67e8cffeee6ecf66ccf0f603": {
       "per_field": {
@@ -77,9 +85,12 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:00:28.196549Z"
+      "gt_overrides": {
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-20T22:41:48.483616Z"
     },
     "8ea8013b38e3ae317ed4e72d85d4c9f612854d48": {
       "per_field": {
@@ -95,7 +106,8 @@
         "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:01:01.825414Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:45:55.587311Z"
     },
     "b0ffee94d6f8f1c0f787c3e34ad6af5276d5b24f": {
       "per_field": {
@@ -105,13 +117,14 @@
         "fire_state": "correct",
         "fire_type": "correct",
         "fire_intensity": "correct",
-        "fire_size": "incorrect",
+        "fire_size": "correct",
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
-        "people_nearby": "skip",
+        "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:01:38.960609Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:46:02.635173Z"
     },
     "56ad46e81b382a369dc451e03222393bc1901d3b": {
       "per_field": {
@@ -124,10 +137,11 @@
         "fire_size": "correct",
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
-        "people_nearby": "skip",
+        "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:02:48.555680Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:46:13.619908Z"
     },
     "ff17035c1a2afdd0de0ffb8c4388f9386d8049db": {
       "per_field": {
@@ -143,7 +157,8 @@
         "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:03:21.118581Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:46:29.019572Z"
     },
     "030d7cd4286d695353bdc3efe4e9cbe1c6baf1e3": {
       "per_field": {
@@ -156,10 +171,11 @@
         "fire_size": "correct",
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
-        "people_nearby": "skip",
-        "tree_vitality": "skip"
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:03:55.300603Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:46:44.883809Z"
     },
     "7126499776504036f62a1063b203afac4079eab8": {
       "per_field": {
@@ -172,12 +188,32 @@
         "fire_size": "correct",
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
-        "people_nearby": "skip",
-        "tree_vitality": "skip"
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:04:30.678511Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:46:49.946934Z"
     },
     "657f05d611e51e4a0c91eac43a6307a3bf7da823": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "fire_hotspots": "Multiple hotspots"
+      },
+      "timestamp": "2026-02-20T22:47:10.218811Z"
+    },
+    "fb86360c66557fc00c8520c9123a27261b395c7d": {
       "per_field": {
         "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
@@ -189,25 +225,10 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
-      },
-      "timestamp": "2026-02-03T00:05:06.321741Z"
-    },
-    "fb86360c66557fc00c8520c9123a27261b395c7d": {
-      "per_field": {
-        "forest_fire_smoke_visible": "correct",
-        "forest_fire_flames_visible": "correct",
-        "confirm_uncontrolled_forest_fire": "correct",
-        "fire_state": "correct",
-        "fire_type": "skip",
-        "fire_intensity": "correct",
-        "fire_size": "correct",
-        "fire_hotspots": "correct",
-        "infrastructure_nearby": "correct",
-        "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:06:28.260188Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:47:48.963933Z"
     },
     "5bc20f505ec9c73a80eec02618cad3d580295208": {
       "per_field": {
@@ -223,13 +244,14 @@
         "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:06:53.442676Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:48:07.411760Z"
     },
     "2b4008a2199921d36ed4f8db72012e435b01ae28": {
       "per_field": {
         "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
-        "confirm_uncontrolled_forest_fire": "correct",
+        "confirm_uncontrolled_forest_fire": "incorrect",
         "fire_state": "correct",
         "fire_type": "correct",
         "fire_intensity": "correct",
@@ -239,13 +261,17 @@
         "people_nearby": "correct",
         "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:09:01.361340Z"
+      "gt_overrides": {
+        "confirm_uncontrolled_forest_fire": "No forest fire visible",
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:48:40.754547Z"
     },
     "787124f0168888af3b30da4cda8842d3f15110f8": {
       "per_field": {
         "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
-        "confirm_uncontrolled_forest_fire": "correct",
+        "confirm_uncontrolled_forest_fire": "incorrect",
         "fire_state": "correct",
         "fire_type": "correct",
         "fire_intensity": "correct",
@@ -253,9 +279,12 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "incorrect"
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:09:52.641157Z"
+      "gt_overrides": {
+        "confirm_uncontrolled_forest_fire": "No forest fire visible"
+      },
+      "timestamp": "2026-02-20T22:48:46.618979Z"
     },
     "ddda64692d013941244ad894691eb7aeb5092313": {
       "per_field": {
@@ -269,9 +298,10 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:10:15.888092Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:49:05.443543Z"
     },
     "fa2122def8ec4070c53c721a5ebb05e27177feb6": {
       "per_field": {
@@ -287,7 +317,10 @@
         "people_nearby": "correct",
         "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:10:51.251461Z"
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:49:16.635779Z"
     },
     "71094a38d758cda46095a1a4c6e89eee9cd2599c": {
       "per_field": {
@@ -301,25 +334,38 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:11:15.182587Z"
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-20T22:49:29.522476Z"
     },
     "f9c54b1c7d5994da4d38245aa9f6b9c0f0036372": {
       "per_field": {
-        "forest_fire_smoke_visible": "incorrect",
+        "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
         "confirm_uncontrolled_forest_fire": "correct",
-        "fire_state": "correct",
-        "fire_type": "correct",
-        "fire_intensity": "correct",
-        "fire_size": "correct",
-        "fire_hotspots": "correct",
-        "infrastructure_nearby": "correct",
-        "people_nearby": "correct",
-        "tree_vitality": "correct"
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:12:24.254892Z"
+      "gt_overrides": {
+        "fire_state": "Growth Phase",
+        "fire_type": "Ground Fire",
+        "fire_intensity": "Moderate",
+        "fire_size": "Medium",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-20T22:50:18.852263Z"
     },
     "122a80aef865046e95fdd04edd308944d0450945": {
       "per_field": {
@@ -335,7 +381,8 @@
         "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:13:19.995399Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-20T22:50:26.386428Z"
     },
     "b06f743eef75085d2023afc010413b5612c817b2": {
       "per_field": {
@@ -349,25 +396,38 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
-        "tree_vitality": "skip"
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:13:43.232119Z"
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:50:51.042054Z"
     },
     "63db5ca1b294a91a51cbec4b76dcc461cc9a689c": {
       "per_field": {
         "forest_fire_smoke_visible": "correct",
         "forest_fire_flames_visible": "correct",
         "confirm_uncontrolled_forest_fire": "correct",
-        "fire_state": "correct",
-        "fire_type": "correct",
-        "fire_intensity": "correct",
-        "fire_size": "correct",
-        "fire_hotspots": "correct",
-        "infrastructure_nearby": "correct",
-        "people_nearby": "correct",
-        "tree_vitality": "correct"
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
       },
-      "timestamp": "2026-02-03T00:14:08.144173Z"
+      "gt_overrides": {
+        "fire_state": "Fully Developed Phase",
+        "fire_type": "Surface Fire",
+        "fire_intensity": "High",
+        "fire_size": "Medium",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "No",
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-20T22:51:33.971297Z"
     },
     "73c56d2f76d34e1a3c5ff7244f348d80c32bed7b": {
       "per_field": {
@@ -381,9 +441,1476 @@
         "fire_hotspots": "correct",
         "infrastructure_nearby": "correct",
         "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:51:52.691266Z"
+    },
+    "ef6f6cbb483328dd4f6e5b8caeb67f6f6329697d": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:52:02.843925Z"
+    },
+    "d89b058c8aa336f4ec32b2a588dc71ce4dd72b7a": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-20T22:52:27.730595Z"
+    },
+    "fcc9d8de117bfc6e7c1ced36685044a8c0b633f3": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-20T22:52:40.820010Z"
+    },
+    "ec006067577d562970212ba5ae011be29f08804c": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_state": "Ignition Phase",
+        "fire_type": "Surface Fire",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "Multiple hotspots",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-20T22:53:13.491649Z"
+    },
+    "479fc0f7e532e987b8024a62af42b6ea70971603": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
         "tree_vitality": "correct"
       },
-      "timestamp": "2026-02-03T00:14:33.107807Z"
+      "gt_overrides": {},
+      "timestamp": "2026-02-25T04:15:51.912536Z"
+    },
+    "18bbfe986c2d60b971e5dac9688b37ba9efeca6c": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "incorrect",
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "confirm_uncontrolled_forest_fire": "Closer investigation required",
+        "fire_state": "Ignition Phase",
+        "fire_type": "Surface Fire",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "No",
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-25T04:16:47.036447Z"
+    },
+    "d4b87e626a7264a5799a2a7661d634b9d390c923": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "incorrect",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "confirm_uncontrolled_forest_fire": "Closer investigation required"
+      },
+      "timestamp": "2026-02-25T04:17:05.230498Z"
+    },
+    "32b0cda380c9ad22c1cdf21089ff033997d6f7c9": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-25T04:17:08.686763Z"
+    },
+    "e95b0f3f07800b301592548e3e5a6a137eea8847": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "correct",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_state": "Ignition Phase",
+        "fire_type": "Surface Fire",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-25T04:17:49.749087Z"
+    },
+    "00f73bedb69ba6edd28a635424872977d6d77efd": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_type": "Surface Fire",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-25T04:18:13.593823Z"
+    },
+    "d0b9e8802aa4eb4ee2a0e5eac125653793556b60": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:41:19.376961Z"
+    },
+    "cb196447c5eddb10981339ad8e69f8fed238169d": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Declining"
+      },
+      "timestamp": "2026-02-26T23:41:46.111835Z"
+    },
+    "e733e3301fe2f0cc73cdcea84c5fd37d5a61f148": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes"
+      },
+      "timestamp": "2026-02-26T23:42:05.633713Z"
+    },
+    "f9a88b7dcfda42496c1d8a5b43c3ec406dde0120": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "infrastructure_nearby": "Yes"
+      },
+      "timestamp": "2026-02-26T23:42:29.311059Z"
+    },
+    "456ff565e6291488b5bcc026af3f787e2e15f679": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "incorrect",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "forest_fire_flames_visible": "No"
+      },
+      "timestamp": "2026-02-26T23:42:51.290485Z"
+    },
+    "765bc05f435ee1a5a490eda81ad20d09780a5721": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "people_nearby": "Yes",
+        "tree_vitality": "Declining"
+      },
+      "timestamp": "2026-02-26T23:43:08.709602Z"
+    },
+    "b9af4129eb8e1ca607334fda8a774c8b4c005ef2": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:43:22.591744Z"
+    },
+    "789576d1986aedb263e2eded1efa070650f57422": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "incorrect",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_type": "Surface Fire",
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:43:44.457626Z"
+    },
+    "b006c616c710ed8bc5157e97daf1ee00e668169d": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:43:48.723959Z"
+    },
+    "e3f1ea7997ec5c60aedaaf19105161374a99d894": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:43:53.804738Z"
+    },
+    "31e2ce8681b090b8726a0753f030989bc73dcb89": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:43:58.689668Z"
+    },
+    "e45e37087a06fdc20d537d19d294b2158c76a526": {
+      "per_field": {
+        "forest_fire_smoke_visible": "incorrect",
+        "forest_fire_flames_visible": "incorrect",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "forest_fire_smoke_visible": "No",
+        "forest_fire_flames_visible": "No",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "people_nearby": "No",
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:44:34.505210Z"
+    },
+    "93b68d99f776f92a624a456ceca4802bf70d8d06": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:44:39.738798Z"
+    },
+    "1b84d91c604fa0c00fdbb297e6f1bf0fe8fe1176": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:44:56.821984Z"
+    },
+    "e0b62b2a994275b5f445aac96f4cee65a1d9ab8f": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:45:16.453188Z"
+    },
+    "6c3318671c52e6bea72f0b780870123e0d8dd22d": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:45:23.539648Z"
+    },
+    "de3139db4fa1579dcaf612ba8e7304060a38a71a": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:45:28.202086Z"
+    },
+    "ab6e23df5c3bf0c64954f70aa0e1b980286dc4cb": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:45:42.268245Z"
+    },
+    "011c2c9ce89cb66f09290c74618828a2662542e0": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:45:47.634669Z"
+    },
+    "7e11bc382bae03822ad2e305f251bd8d728b71ea": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:45:59.550179Z"
+    },
+    "b0dcb47c6c70c7aa026b9acd16a547d5abb8ad72": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:46:07.381598Z"
+    },
+    "091954d0e6be6812fc934d3fb0499927dc47295b": {
+      "per_field": {
+        "forest_fire_smoke_visible": "incorrect",
+        "forest_fire_flames_visible": "incorrect",
+        "confirm_uncontrolled_forest_fire": "incorrect",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "forest_fire_smoke_visible": "No",
+        "forest_fire_flames_visible": "No",
+        "confirm_uncontrolled_forest_fire": "No forest fire visible"
+      },
+      "timestamp": "2026-02-26T23:47:00.882133Z"
+    },
+    "b05eeedb619e2c1578993f83c104d88ea37a4a21": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:47:05.078245Z"
+    },
+    "3d24e21e2e1d9b5c397a0440eb7377d6ac7d0950": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:47:12.828213Z"
+    },
+    "4a6dfd5df7e14b7b216465ffbde2093a8f763f50": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:47:16.477003Z"
+    },
+    "d0b1e0427b9dfe3e40e97d20bf2712f1a9f15634": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:47:19.347335Z"
+    },
+    "94e9f7f1182b4c6cf0c415f7a220f91f4be50683": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:47:26.043716Z"
+    },
+    "5fd499539bf8466331f16f12bfa362cb44181b51": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:47:40.325675Z"
+    },
+    "35c57998cc0a115d6a8eeb5869ae489f7249ebb5": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:47:45.792239Z"
+    },
+    "82fa87ec9c8910df4694973f549b0f321e570129": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:47:49.808775Z"
+    },
+    "667cd1b234ec341cacf423ba1879740f1d48e2be": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_state": "Ignition Phase",
+        "fire_type": "Surface Fire",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:48:25.272151Z"
+    },
+    "b0e296f2aacd91918b2bc1db1839d39e0fb0cb20": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:48:41.670560Z"
+    },
+    "7914efda590f06205661138e976c291f6c47645b": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:48:45.970959Z"
+    },
+    "ab182855863b51c1f144b77c88a726375a22b080": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:48:59.502110Z"
+    },
+    "5af17eee9fa54a9b850b966aabd50cd497d5b523": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "incorrect",
+        "fire_type": "incorrect",
+        "fire_intensity": "incorrect",
+        "fire_size": "incorrect",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "fire_state": "Ignition Phase",
+        "fire_type": "Surface Fire",
+        "fire_intensity": "Low",
+        "fire_size": "Small",
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes",
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:49:32.250795Z"
+    },
+    "25caa2d33cbe2a591d15e0651177cca90d2b616f": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:49:39.934486Z"
+    },
+    "a4c2ea0dd2fd5f7122678582d74535eeba252123": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:49:48.049765Z"
+    },
+    "e74d5d91f7b7f369b96b4d48df4eaf4fb3c27a8d": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:04.083193Z"
+    },
+    "43514803e13b80776a67a54eba3f107dc814c428": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:50:23.665207Z"
+    },
+    "cf23a082cd5d4d649c0e45fe49227fab64fa62be": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:27.198277Z"
+    },
+    "1ab1cb8a8fe7dced94a001773fc18be084b2942a": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:30.381191Z"
+    },
+    "e9a8fa3f5c35fa8bb7247f84cdeefe660f4ec706": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes"
+      },
+      "timestamp": "2026-02-26T23:50:38.547824Z"
+    },
+    "811fed878aaca9d4550ef1adf5ca18e875a69652": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:42.447112Z"
+    },
+    "6336c40bf0a74900fa2ed5edb08c03dedeac8be9": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:44.545876Z"
+    },
+    "bc607b1cac79eddc9ac08465225bda57d5b92e88": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:45.962880Z"
+    },
+    "de522cf1dfb5f04aec148d50e86a65c792a77810": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:50:47.045988Z"
+    },
+    "fdecef4052af40afd1a15ff7caf4172503ed78fe": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "incorrect",
+        "infrastructure_nearby": "incorrect",
+        "people_nearby": "incorrect",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {
+        "fire_hotspots": "One hotspot",
+        "infrastructure_nearby": "Yes",
+        "people_nearby": "Yes"
+      },
+      "timestamp": "2026-02-26T23:50:59.060818Z"
+    },
+    "7507681f651ad637b0e50bc43383f4b72196529b": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:01.961648Z"
+    },
+    "e32d1e66b3de43f9f69ba5e167bf840515ac6b22": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-26T23:51:10.621550Z"
+    },
+    "26d34ae2eb2485f627e709563b7dbe3f6967758c": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:12.329074Z"
+    },
+    "a287d966f9cf5c016f98a7f9b47ffa85d9c94b15": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:14.011705Z"
+    },
+    "a6285fef2b81e34f1d5be78c9dadfa462ada9780": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:51:23.194180Z"
+    },
+    "6e529f8ee710a769e73f2d579bbfb5028b438c50": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:24.844843Z"
+    },
+    "01faea7877261f7c12c35d23c84e127d088e2d26": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:29.026872Z"
+    },
+    "fb2e06d8dda90ba538de2e86bb06661463d182b7": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:31.160421Z"
+    },
+    "7895f9587b445a9697e3428419e276dcdfebe4c2": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:37.227017Z"
+    },
+    "649c403143183722d1c988976dd28fe12a0676ef": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:51:42.926694Z"
+    },
+    "7d13b66d8d64eb7d5d64ae68cf0480d59b80125c": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:51:51.225830Z"
+    },
+    "1ce86163917864ff722e7d4783a5650ec9e229cc": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:51:52.019223Z"
+    },
+    "a191753a007075e84ec84db16d3bd2b157656c4a": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Vital"
+      },
+      "timestamp": "2026-02-26T23:51:58.289515Z"
+    },
+    "12444bcd46ea30f15dcf8bc5067f1efd0e3f33a6": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:52:08.760385Z"
+    },
+    "5fa35862f5b22fcee20da5cd98418e3eb7fb249b": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:52:13.873810Z"
+    },
+    "4a9fdeec47e1b7a286a1d973f168d813bdcd3a76": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:52:22.256516Z"
+    },
+    "9de23f0bc28272b3239034b539252eb95532d0f9": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:52:24.467179Z"
+    },
+    "50832d463e23a6a8a4707370486d799a8bc02a5e": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:52:26.207347Z"
+    },
+    "b8f24f4e980ed402fe7e10a437a9833f7a26c738": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "correct"
+      },
+      "gt_overrides": {},
+      "timestamp": "2026-02-26T23:52:28.674860Z"
+    },
+    "e7772878798c74a547044e847e264f0c979d8948": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Moderate Vitality"
+      },
+      "timestamp": "2026-02-26T23:52:34.622872Z"
+    },
+    "aca1a3df316c8c8482f17ec63030a5ae1ebe56f7": {
+      "per_field": {
+        "forest_fire_smoke_visible": "correct",
+        "forest_fire_flames_visible": "correct",
+        "confirm_uncontrolled_forest_fire": "correct",
+        "fire_state": "correct",
+        "fire_type": "correct",
+        "fire_intensity": "correct",
+        "fire_size": "correct",
+        "fire_hotspots": "correct",
+        "infrastructure_nearby": "correct",
+        "people_nearby": "correct",
+        "tree_vitality": "incorrect"
+      },
+      "gt_overrides": {
+        "tree_vitality": "Dead"
+      },
+      "timestamp": "2026-02-26T23:52:58.103027Z"
     }
   }
 }

@@ -1,17 +1,17 @@
-Review summary updated: 2026-02-03T00:14:33.108793Z
-Total images reviewed (at least one field set): 24
+Review summary updated: 2026-02-26T23:52:58.109648Z
+Total images reviewed: 102
 Total images in dataset: 102
 
-forest_fire_smoke_visible: correct=23, incorrect=1, skip=0, accuracy(excluding skip)=95.8%
-forest_fire_flames_visible: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
-confirm_uncontrolled_forest_fire: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
-fire_state: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
-fire_type: correct=23, incorrect=0, skip=1, accuracy(excluding skip)=100.0%
-fire_intensity: correct=23, incorrect=0, skip=1, accuracy(excluding skip)=100.0%
-fire_size: correct=22, incorrect=1, skip=1, accuracy(excluding skip)=95.7%
-fire_hotspots: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
-infrastructure_nearby: correct=24, incorrect=0, skip=0, accuracy(excluding skip)=100.0%
-people_nearby: correct=20, incorrect=0, skip=4, accuracy(excluding skip)=100.0%
-tree_vitality: correct=12, incorrect=3, skip=9, accuracy(excluding skip)=80.0%
+forest_fire_smoke_visible: correct=100, incorrect=2, accuracy=98.0%
+forest_fire_flames_visible: correct=99, incorrect=3, accuracy=97.1%
+confirm_uncontrolled_forest_fire: correct=97, incorrect=5, accuracy=95.1%
+fire_state: correct=94, incorrect=8, accuracy=92.2%
+fire_type: correct=93, incorrect=9, accuracy=91.2%
+fire_intensity: correct=94, incorrect=8, accuracy=92.2%
+fire_size: correct=93, incorrect=9, accuracy=91.2%
+fire_hotspots: correct=89, incorrect=13, accuracy=87.3%
+infrastructure_nearby: correct=88, incorrect=14, accuracy=86.3%
+people_nearby: correct=90, incorrect=12, accuracy=88.2%
+tree_vitality: correct=60, incorrect=42, accuracy=58.8%
 
-OVERALL accuracy (excluding skip): 98.0%
+OVERALL accuracy: 88.9%

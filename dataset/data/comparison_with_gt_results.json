@@ -1,0 +1,65 @@
+{
+  "category_stats": {
+    "forest_fire_smoke_visible": {
+      "total": 102,
+      "pro_matches": 100,
+      "flash_matches": 92
+    },
+    "forest_fire_flames_visible": {
+      "total": 102,
+      "pro_matches": 99,
+      "flash_matches": 91
+    },
+    "confirm_uncontrolled_forest_fire": {
+      "total": 102,
+      "pro_matches": 97,
+      "flash_matches": 91
+    },
+    "fire_state": {
+      "total": 102,
+      "pro_matches": 94,
+      "flash_matches": 78
+    },
+    "fire_type": {
+      "total": 102,
+      "pro_matches": 93,
+      "flash_matches": 68
+    },
+    "fire_intensity": {
+      "total": 102,
+      "pro_matches": 94,
+      "flash_matches": 79
+    },
+    "fire_size": {
+      "total": 102,
+      "pro_matches": 93,
+      "flash_matches": 64
+    },
+    "fire_hotspots": {
+      "total": 102,
+      "pro_matches": 89,
+      "flash_matches": 64
+    },
+    "infrastructure_nearby": {
+      "total": 102,
+      "pro_matches": 88,
+      "flash_matches": 85
+    },
+    "people_nearby": {
+      "total": 102,
+      "pro_matches": 90,
+      "flash_matches": 79
+    },
+    "tree_vitality": {
+      "total": 102,
+      "pro_matches": 60,
+      "flash_matches": 34
+    }
+  },
+  "overall_pro_accuracy": 88.85918003565062,
+  "overall_flash_accuracy": 73.52941176470588,
+  "overall_pro_matches": 997,
+  "overall_flash_matches": 825,
+  "overall_total": 1122,
+  "common_images": 102
+}
