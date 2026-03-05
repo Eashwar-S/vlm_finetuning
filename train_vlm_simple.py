@@ -191,8 +191,8 @@ def main():
         lora_rank=16,
         evaluator_builders=[],
         infrequent_evaluator_builders=[],
-        save_every=500,
-        eval_every=500,
+        save_every=1000,
+        eval_every=1000,
         wandb_project="forest-fire-vlm",  # Set to your project name to enable W&B
         wandb_name="forest-fire-vlm-training",
     )

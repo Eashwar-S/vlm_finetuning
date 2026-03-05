@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-MODEL = "google/gemini-3-flash-preview"  # Changed to Gemini 3 Flash
+MODEL = "google/gemini-3-flashs-preview"  # Changed to Gemini 3 Flash
 
 PROMPT_TEXT = """Analyze the aerial image from the UAV's camera and detect potential forest fires. Answer the following questions based on the image analysis
 in a JSON schema. If a question cannot be determined from the image answer with 'Cannot be determined'.
